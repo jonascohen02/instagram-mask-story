@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Mask Story Tool
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @updateURL    https://github.com/jonascohen02/instagram-mask-story/raw/main/script.user.js
 // @downloadURL  https://github.com/jonascohen02/instagram-mask-story/raw/main/script.user.js
-// @description  Mask story for all users or toggle it
+// @description  Mask story for all users or only blocked list. Use for block everyone, post story to see who watch our profile and then reverse it. 
 // @author       Jonas Cohen
 // @match        https://www.instagram.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=instagram.com
