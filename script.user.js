@@ -72,7 +72,7 @@
         let actualBlocked = [];
         window.contenerFollowers.forEach(function callback(e, i) {
             if(e.innerHTML.includes('https://i.instagram.com/static/images/bloks/icons/generated/circle-check__filled')) {
-                actualBlocked.push(e.innerText.split('\n')[0]);
+                actualBlocked.push(e.innerText.trim().split('\n')[0]);
             }
         });
         //https://i.instagram.com/static/images/bloks/icons/generated/circle__outline
@@ -96,11 +96,11 @@
         console.log(nbFollowers);
         console.log(contenerIdx);
         if (element.innerHTML.includes('https://i.instagram.com/static/images/bloks/icons/generated/circle-check__filled')) {
-            if (!window.excludes.includes(element.innerText.split('\n')[0]) && !window.blockEveryone) {
+            if (!window.excludes.includes(element.innerText.trim().split('\n')[0]) && !window.blockEveryone) {
                 element.click();
             }
         } else {
-            if (window.excludes.includes(element.innerText.split('\n')[0]) || window.blockEveryone) {
+            if (window.excludes.includes(element.innerText.trim().split('\n')[0]) || window.blockEveryone) {
                 element.click();
             }
         }
